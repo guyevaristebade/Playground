@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { ThemeProvider } from "./context/ThemeContext";
 import NavBar from "./components/NavBar";
 import './globals.css'
 
@@ -15,7 +14,6 @@ export default function RootLayout({
 }>) {
 
   return (
-    <ThemeProvider>
       <html lang="fr">
         <body
           className="min-h-screen"
@@ -24,6 +22,5 @@ export default function RootLayout({
             {children}
         </body>
       </html>
-    </ThemeProvider>
   );
 }
